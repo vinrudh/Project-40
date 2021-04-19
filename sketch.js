@@ -10,6 +10,7 @@ var players;
 var fruits;
 var fruitGroup;
 var fruit1_img, fruit2_img, fruit3_img, fruit4_img, fruit5_img;
+var fruit1, fruit2, fruit3, fruit4, fruit5;
 var player_img;
 
 
@@ -34,8 +35,24 @@ function setup() {
 
 function draw() {
   background(back_img);
-  
-   if (playerCount === 2) {
+  //players.x = mouse.x
+
+  //if(fruit1.isTouching){
+  //fruit1.destroy;
+  //}
+  //if(fruit2.isTouching){
+  //fruit2.destroy;
+  //}
+  //if(fruit3.isTouching){
+  //fruit3.destroy;
+  //}
+  //if(fruit4.isTouching){
+  //fruit4.destroy;
+  //}
+  //if(fruit5.isTouching){
+  //fruit5.destroy;
+  //}
+  if (playerCount === 2) {
      game.update(1);
    }
    if (gameState === 1) {
@@ -43,7 +60,7 @@ function draw() {
      game.play();
    }
    if (gameState === 2) {
-         
+    
      game.end();
    }
 }
